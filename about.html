@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title></title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Template Main CSS File -->
+  <link href="assets/css/style.css" rel="stylesheet">
+
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+    
+    body {
+      background-color: #f1f1f1;
+    }
+    
+    #regForm {
+      background-color: #ffffff;
+      margin: 100px auto;
+      font-family: Raleway;
+      padding: 40px;
+      width: 70%;
+      min-width: 300px;
+    }
+    
+    h1 {
+      text-align: center;  
+    }
+    
+    input {
+      padding: 10px;
+      width: 100%;
+      font-size: 17px;
+      font-family: Raleway;
+      border: 1px solid #aaaaaa;
+    }
+    
+    /* Mark input boxes that gets an error on validation: */
+    input.invalid {
+      background-color: #ffdddd;
+    }
+    
+    /* Hide all steps by default: */
+    .tab {
+      display: none;
+    }
+    
+    button {
+      background-color: #04AA6D;
+      border-radius: 15px;
+      color: #ffffff;
+      border: none;
+      padding: 10px 20px;
+      font-size: 17px;
+      font-family: Raleway;
+      cursor: pointer;
+    }
+    
+    button:hover {
+      opacity: 0.8;
+    }
+    
+    #prevBtn {
+      background-color: #bbbbbb;
+    }
+    
+    /* Make circles that indicate the steps of the form: */
+    .step {
+      height: 3px;
+      width: 22px;
+      margin: 0 2px;
+      background-color: #04AA6D;
+      border: none;  
+      display: inline-block;
+      opacity: 0.5;
+    }
+    
+    .step.active {
+      opacity: 1;
+    }
+    
+    /* Mark the steps that are finished and valid: */
+    .step.finish {
+      background-color: #04AA6D;
+    }
+    </style>
+</head>
+
+<body>
+
+  <!-- ======= Header ======= -->
+  <header id="" class="fixed-top">
+    <div class="container-fluid d-flex justify-content-between align-items-center">
+               
+      <!-- <h1 class="logo me-auto me-lg-0"><a href="index.html">Kelly</a></h1> -->
+      <!-- Uncomment below if you prefer to use an image logo -->
+      <!-- <a href="index.html" class="logo"><img src="assets/img/logo.png" alt="" class="img-fluid"></a> -->
+
+      <nav id="navbar" class="navbar order-last order-lg-0">
+        <ul>
+          <!-- <li><a href="index.html">Home</a></li>
+          <li><a class="active" href="about.html">About</a></li>
+          <li><a href="resume.html">Resume</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="portfolio.html">Portfolio</a></li>
+          <li><a href="contact.html">Contact</a></li> -->
+        </ul>
+        
+      </nav><!-- .navbar -->
+
+      <div class="header-social-links">
+        <!-- <a href="#" class="twitter"><i class="bi bi-twitter"></i></a>
+        <a href="#" class="facebook"><i class="bi bi-facebook"></i></a>
+        <a href="#" class="instagram"><i class="bi bi-instagram"></i></a>
+        <a href="#" class="linkedin"><i class="bi bi-linkedin"></i></i></a>
+      </div> -->
+
+    </div>
+
+  </header><!-- End Header -->
+
+  <main id="main">
+
+    <!-- ======= About Section ======= -->
+    <section id="about" class="about">
+      <div class="container" data-aos="fade-up">
+
+        <div class="section-title">
+          <h2>Interview Questions</h2>
+          <p>Kindly provide the right answers to each Questions.</p>
+      
+        </div>
+        <div style="text-align:center;margin-top:40px;">
+          <span class="step"></span>
+          <span class="step"></span>
+          <span class="step"></span>
+          <span class="step"></span>
+          <span class="step"></span>
+          <span class="step"></span>
+          <span class="step"></span>
+          <span class="step"></span>
+          <span class="step"></span>
+          <span class="step"></span>
+          <span class="step"></span>
+          <span class="step"></span>
+          <span class="step"></span>
+          <span class="step"></span>
+          <span class="step"></span>
+          <span class="step"></span>
+          <span class="step"></span>
+          <span class="step"></span>
+          <span class="step"></span>
+          <span class="step"></span>
+          <span class="step"></span>
+          <span class="step"></span>
+          <span class="step"></span>
+          <span class="step"></span>
+          <span class="step"></span>
+        </div>
+        <form id="regForm" action="services.html" data-aos="fade-up">
+
+          
+          <!-- One "tab" for each step in the form: -->
+          <div class="tab"> 
+            <h1>Question 1/25</h1>What's your full name?
+            <p><input placeholder="First name..." oninput="this.className = ''" name="fname"></p>
+            <p><input placeholder="Last name..." oninput="this.className = ''" name="lname"></p>
+          </div>
+          <div class="tab">
+            <h1>Question 2/25</h1>What's your full name?When’s your birthday?
+            <p><input placeholder="dd" oninput="this.className = ''" name="dd"></p>
+            <p><input placeholder="mm" oninput="this.className = ''" name="nn"></p>
+            <p><input placeholder="yyyy" oninput="this.className = ''" name="yyyy"></p>
+          </div>
+          <div class="tab">
+            <h1>Question 3/25</h1>What's your full name?What's your email?
+            <p><input placeholder="E-mail..." oninput="this.className = ''" name="email"></p>
+          </div>
+          <div class="tab">
+            <h1>Question 4/25</h1>What's your full name?Tell me about yourself?
+            <p><textarea placeholder="..." cols="70" rows="0" oninput="this.className = ''" name="uname"></textarea></p>
+           
+          </div>
+          <div class="tab">
+            <h1>Question 5/25</h1>What's your full name?Why do you want this job?
+            <p><textarea placeholder="..." cols="70" rows="0" oninput="this.className = ''" name="uname"></textarea></p>
+           
+          </div>
+          <div class="tab">
+            <h1>Question 6/25</h1>What's your full name?What can you bring to the company?
+            <p><textarea placeholder="..." cols="70" rows="0" oninput="this.className = ''" name="uname"></textarea></p>
+           
+          </div>
+          <div class="tab">
+            <h1>Question 7/25</h1>What's your full name?What are your greatest strengths?
+            <p><textarea placeholder="..." cols="70" rows="0" oninput="this.className = ''" name="uname"></textarea></p>
+           
+          </div>
+          <div class="tab">
+            <h1>Question 8/25</h1>What's your full name?What Is Your Greatest Weakness?
+            <p><textarea placeholder="..." cols="70" rows="0" oninput="this.className = ''" name="uname"></textarea></p>
+           
+          </div>
+          <div class="tab">
+            <h1>Question 9/25</h1>What's your full name?What is your greatest professional achievement?
+            <p><textarea placeholder="..." cols="70" rows="0" oninput="this.className = ''" name="uname"></textarea></p>
+           
+          </div>
+          <div class="tab">
+            <h1>Question 10/25</h1>What's your full name?Tell us about a challenge or conflict you’ve faced at work, and how you dealt with it.
+            <p><textarea placeholder="..." cols="70" rows="0" oninput="this.className = ''" name="uname"></textarea></p>
+           
+          </div>
+          <div class="tab">
+            <h1>Question 11/25</h1>What's your full name?Tell us about a time you demonstrated leadership skills.
+            <p><textarea placeholder="..." cols="70" rows="0" oninput="this.className = ''" name="uname"></textarea></p>
+           
+          </div>
+          <div class="tab">
+            <h1>Question 12/25</h1>What's your full name?What’s your current salary?
+            <p><textarea placeholder="..." cols="70" rows="0" oninput="this.className = ''" name="uname"></textarea></p>
+           
+          </div>
+          <div class="tab">
+            <h1>Question 13/25</h1>What's your full name?What are you looking for in a new position?
+            <p><textarea placeholder="..." cols="70" rows="0" oninput="this.className = ''" name="uname"></textarea></p>
+           
+          </div>
+          <div class="tab">
+            <h1>Question 14/25</h1>What's your full name?What’s your work style?
+            <p><textarea placeholder="..." cols="70" rows="0" oninput="this.className = ''" name="uname"></textarea></p>
+           
+          </div>
+          <div class="tab">
+            <h1>Question 15/25</h1>What's your full name?What’s your management style?
+            <p><textarea placeholder="..." cols="70" rows="0" oninput="this.className = ''" name="uname"></textarea></p>
+           
+          </div>
+          <div class="tab">
+            <h1>Question 16/25</h1>What's your full name?How would your boss and coworkers describe you?
+            <p><textarea placeholder="..." cols="70" rows="0" oninput="this.className = ''" name="uname"></textarea></p>
+           
+          </div>
+          <div class="tab">
+            <h1>Question 17/25</h1>What's your full name?What are you passionate about?
+            <p><textarea placeholder="..." cols="70" rows="0" oninput="this.className = ''" name="uname"></textarea></p>
+           
+          </div>
+          <div class="tab">
+            <h1>Question 18/25</h1>What's your full name?What motivates you?
+            <p><textarea placeholder="..." cols="70" rows="0" oninput="this.className = ''" name="uname"></textarea></p>
+           
+          </div>
+          <div class="tab">
+            <h1>Question 19/25</h1>What's your full name?What other companies are you interviewing with?
+            <p><textarea placeholder="..." cols="70" rows="0" oninput="this.className = ''" name="uname"></textarea></p>
+           
+          </div>
+          <div class="tab">
+            <h1>Question 20/25</h1>What's your full name?What makes you unique?
+            <p><textarea placeholder="..." cols="70" rows="0" oninput="this.className = ''" name="uname"></textarea></p>
+           
+          </div>
+          <div class="tab">
+            <h1>Question 21/25</h1>What's your full name?What would your first few months look like in this role?
+            <p><textarea placeholder="..." cols="70" rows="0" oninput="this.className = ''" name="uname"></textarea></p>
+           
+          </div>
+          <div class="tab">
+            <h1>Question 22/25</h1>What's your full name?What are your salary expectations?
+            <p><textarea placeholder="..." cols="70" rows="0" oninput="this.className = ''" name="uname"></textarea></p>
+           
+          </div>
+          <div class="tab">
+            <h1>Question 23/25</h1>What's your full name?What did you like and/or dislike about your current/previous job?
+            <p><textarea placeholder="..." cols="70" rows="0" oninput="this.className = ''" name="uname"></textarea></p>
+           
+          </div>
+          <div class="tab">
+            <h1>Question 24/25</h1>What's your full name?Tell me about your educational background.
+            <p><textarea placeholder="..." cols="70" rows="0" oninput="this.className = ''" name="uname"></textarea></p>
+           
+          </div>
+          <div class="tab">
+            <h1>Question 25/25</h1>What's your full name?Are you willing to travel?
+            <p><textarea placeholder="..." cols="70" rows="0" oninput="this.className = ''" name="uname"></textarea></p>
+           
+          </div>
+          <div style="overflow:auto;">
+            <div style="float:right;">
+              <button type="button"  id="prevBtn" onclick="nextPrev(-1)">Previous</button>
+              <button type="button"  id="nextBtn" onclick="nextPrev(1)">Next</button>
+            </div>
+          </div>
+          <!-- Circles which indicates the steps of the form: -->
+        
+        </form>
+        
+    </section><!-- End Testimonials Section -->
+
+  </main><!-- End #main -->
+  
+  <!-- ======= Footer ======= -->
+  
+  </footer><!-- End  Footer -->
+
+  <div id="preloader"></div>
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+
+  <!-- Template Main JS File -->
+  <script src="assets/js/main.js"></script>
+  <script>
+    var currentTab = 0; // Current tab is set to be the first tab (0)
+    showTab(currentTab); // Display the current tab
+    
+    function showTab(n) {
+      // This function will display the specified tab of the form...
+      var x = document.getElementsByClassName("tab");
+      x[n].style.display = "block";
+      //... and fix the Previous/Next buttons:
+      if (n == 0) {
+        document.getElementById("prevBtn").style.display = "none";
+      } else {
+        document.getElementById("prevBtn").style.display = "inline";
+      }
+      if (n == (x.length - 1)) {
+        document.getElementById("nextBtn").innerHTML = "Submit";
+      } else {
+        document.getElementById("nextBtn").innerHTML = "Next";
+      }
+      //... and run a function that will display the correct step indicator:
+      fixStepIndicator(n)
+    }
+
+    
+    function nextPrev(n) {
+      // This function will figure out which tab to display
+      var x = document.getElementsByClassName("tab");
+      // Exit the function if any field in the current tab is invalid:
+      // if (n == 1 && !validateForm()) return false;
+      // Hide the current tab:
+      x[currentTab].style.display = "none";
+      // Increase or decrease the current tab by 1:
+      currentTab = currentTab + n;
+      // if you have reached the end of the form...
+      if (currentTab >= x.length) {
+        // ... the form gets submitted:
+        document.getElementById("regForm").submit("/services.html");
+        return false;
+      }
+      // Otherwise, display the correct tab:
+      showTab(currentTab,);
+    }
+    
+    function fixStepIndicator(n) {
+  // This function removes the "active" class of all steps...
+  var i, x = document.getElementsByClassName("step");
+  for (i = 0; i < x.length; i++) {
+    x[i].className = x[i].className.replace(" active", "");
+  }
+  //... and adds the "active" class on the current step:
+  x[n].className += " active";
+}
+    
+    </script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js">
+    $(document).ready(function(){
+  $("#nextBtn").click(function(){
+    $(".tab").fadeOut();
+  });
+  $(".btn2").click(function(){
+    $("p").fadeIn();
+  });
+});
+    </script>
+
+</body>
+
+</html>
